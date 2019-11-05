@@ -1,0 +1,60 @@
+.header {
+  min-height: 10rem;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  flex-basis: 100%;
+  display: inline-block;
+
+  &_img {
+    width: auto;
+    min-height: 6rem;
+    max-height: 10vh;
+  }
+}
+
+.nav {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.link {
+  // margin-top: 1rem;
+  border: none;
+  background: none;
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.path {
+  fill: aliceblue;
+}
+/*
+@media only screen and (min-width: 56.25em) {
+  .logo {
+    flex-basis: 75%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo_img {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    flex-basis: 25%;
+  }
+}
+*/

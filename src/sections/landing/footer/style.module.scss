@@ -1,0 +1,57 @@
+.footer {
+  background: black;
+  min-height: 0rem;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+
+  &_content {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    padding-bottom: 1.5rem;
+    align-items: space-between;
+  }
+}
+
+.socials {
+  flex-basis: 50%;
+  max-width: 50rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+}
+.path {
+  fill: white;
+}
+
+.more {
+  flex-basis: 25%;
+  color: white;
+  font-size: 1rem;
+  text-align: end;
+  transform-origin: bottom right;
+  transform: rotate(90deg) translateY(0.5rem);
+}
+
+@media (hover: hover) and (min-width: 31.25em) {
+  .socials {
+    min-width: 45rem;
+  }
+}
+
+@media (hover: hover) and (max-width: 31.2em) {
+  .socials {
+    display: none;
+  }
+}
