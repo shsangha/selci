@@ -1,22 +1,10 @@
 import React from "react"
-import PageWrapper from "../components/PageWrapper"
-import Seo from "../components/Seo"
-import AnimatedIndex from "../components/AnimatedIndex"
+import Landing from "../sections/landing"
+import Cursor from "../components/cursor"
 
-const Index = props => (
+export default () => (
   <>
-    <Seo />
-    <PageWrapper
-      {...props}
-      currentPage=""
-      menuAccess={false}
-      menuOpen={true}
-      defaultLinks={["shop", "about", "music", "shows"]}
-      dataCy="index"
-    >
-      <AnimatedIndex />
-    </PageWrapper>
+    <Cursor />
+    <Landing />
   </>
 )
-
-export default Index
