@@ -12,7 +12,7 @@
 a:focus,
 button:focus,
 button:active {
-  outline: 1px solid $color-purple-light;
+  opacity: 1;
 }
 
 a,
@@ -21,8 +21,6 @@ button {
 }
 
 html {
-  overflow: hidden;
-
   font-size: 62.5%;
 
   @include respond(tab-land) {
@@ -44,15 +42,18 @@ html {
 
 body {
   box-sizing: border-box;
-  background: black;
   position: relative;
+  background: black;
 }
 
-::selection {
-  background-color: $color-purple-dark;
-  color: white;
-}
-
-.tl-edges {
-  overflow-y: hidden;
+*,
+*:hover,
+*:active,
+button,
+button:hover,
+button:active,
+a,
+a:hover,
+a:active {
+  cursor: none;
 }
